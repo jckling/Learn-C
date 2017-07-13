@@ -3,7 +3,7 @@
 BOOL attackresponse = FALSE;
 BOOL bigstart = FALSE;
 
-// ³õÊ¼»¯Íæ¼Ò
+// åˆå§‹åŒ–ç©å®¶
 void Player_Inite() {
 
 	player.x = x_start;
@@ -15,7 +15,7 @@ void Player_Inite() {
 	player.fire = InitFire;
 }
 
-// Õ¾Á¢(×ó) ÔØÈë¡¢»æÖÆ
+// ç«™ç«‹(å·¦) è½½å…¥ã€ç»˜åˆ¶
 void StandL_Load(HWND hwnd) {
 
 	int i;
@@ -41,7 +41,7 @@ void StandL_Paint(HDC hdc, HDC hdcmem) {
 	stand++;
 }
 
-// Õ¾Á¢(ÓÒ) ÔØÈë¡¢»æÖÆ
+// ç«™ç«‹(å³) è½½å…¥ã€ç»˜åˆ¶
 void StandR_Load(HWND hwnd) {
 
 	int i;
@@ -65,7 +65,7 @@ void StandR_Paint(HDC hdc, HDC hdcmem) {
 	move++;
 }
 
-// ÒÆ¶¯(×ó) ÔØÈë¡¢»æÖÆ
+// ç§»åŠ¨(å·¦) è½½å…¥ã€ç»˜åˆ¶
 void MoveL_Load(HWND hwnd) {
 
 	int i;
@@ -91,7 +91,7 @@ void MoveL_Paint(HDC hdc, HDC hdcmem) {
 	move++;
 }
 
-// ÒÆ¶¯(ÓÒ) ÔØÈë¡¢»æÖÆ
+// ç§»åŠ¨(å³) è½½å…¥ã€ç»˜åˆ¶
 void MoveR_Load(HWND hwnd) {
 
 	int i;
@@ -115,7 +115,7 @@ void MoveR_Paint(HDC hdc, HDC hdcmem) {
 	move++;
 }
 
-// ¹¥»÷(×ó) ÔØÈë¡¢»æÖÆ
+// æ”»å‡»(å·¦) è½½å…¥ã€ç»˜åˆ¶
 void AttackL_Load(HWND hwnd) {
 
 	int i;
@@ -128,7 +128,7 @@ void AttackL_Load(HWND hwnd) {
 	attack = 0;
 }
 
-// ¹¥»÷(ÓÒ) ÔØÈë¡¢»æÖÆ
+// æ”»å‡»(å³) è½½å…¥ã€ç»˜åˆ¶
 void AttackR_Load(HWND hwnd) {
 
 	int i;
@@ -139,7 +139,7 @@ void AttackR_Load(HWND hwnd) {
 	}
 }
 
-// ´óÕĞ(×ó) ÔØÈë¡¢»æÖÆ
+// å¤§æ‹›(å·¦) è½½å…¥ã€ç»˜åˆ¶
 void BigL_Load(HWND hwnd) {
 
 	int i;
@@ -160,12 +160,12 @@ void BigL_Paint(HDC hdc, HDC hdcmem) {
 		big = 0;
 
 	SelectObject(hdcmem, Lbigbmp[big]);
-	TransparentBlt(hdc, bigx, bigy, Big_Width, Big_Height, hdcmem, 0, 0, 127, 93, RGB(255, 255, 255));
+	TransparentBlt(hdc, bigx - P_Width, bigy, Big_Width, Big_Height, hdcmem, 0, 0, 127, 93, RGB(255, 255, 255));
 	
 	big++;
 }
 
-// ´óÕĞ(ÓÒ) ÔØÈë¡¢»æÖÆ
+// å¤§æ‹›(å³) è½½å…¥ã€ç»˜åˆ¶
 void BigR_Load(HWND hwnd) {
 
 	int i;
@@ -188,7 +188,7 @@ void BigR_Paint(HDC hdc, HDC hdcmem) {
 	big++;
 }
 
-// ÔØÈëÍ¼Æ¬
+// è½½å…¥å›¾ç‰‡
 void LoadPlayer(HWND hwnd) {
 
 	StandL_Load(hwnd);
@@ -214,7 +214,7 @@ void LoadArmy(HWND hwnd) {
 	B_Load(hwnd);	
 }
 
-// ÔØÈëĞÅÏ¢
+// è½½å…¥ä¿¡æ¯
 void LoadInfo(HWND hwnd) {
 
 	hbmpLife = LoadImage(NULL, BITMAP_FILE_LIFE, IMAGE_BITMAP, 134, 117, LR_LOADFROMFILE);
@@ -222,7 +222,7 @@ void LoadInfo(HWND hwnd) {
 	hbmpFire = LoadImage(NULL, BITMAP_FILE_FIRE, IMAGE_BITMAP, 344, 471, LR_LOADFROMFILE);
 }
 
-// ÏÔÊ¾Íæ¼ÒºÍBOSSµÄĞÅÏ¢
+// æ˜¾ç¤ºç©å®¶å’ŒBOSSçš„ä¿¡æ¯
 void PaintInfo(HDC hdc, HDC hdcmem) {
 
 	int i, j, k;
@@ -252,7 +252,7 @@ void PaintInfo(HDC hdc, HDC hdcmem) {
 	}
 }
 
-// »æÖÆµĞÈË
+// ç»˜åˆ¶æ•Œäºº
 void PaintArmy(HDC hdc, HDC hdcmem) {
 
 	int i;
@@ -284,7 +284,7 @@ void PaintArmy(HDC hdc, HDC hdcmem) {
 
 }
 
-// ¹¥»÷»æÍ¼
+// æ”»å‡»ç»˜å›¾
 void AttackPaint(HWND hwnd) {
 
 	HDC hdc, hdcmem;
@@ -294,7 +294,7 @@ void AttackPaint(HWND hwnd) {
 	RECT rect;
 	BITMAP bmp;
 
-	GetClientRect(hwnd, &rect); //°Ñ¿Í»§ÇøµÄ´óĞ¡Ğ´½øRect½á¹¹ÖĞ
+	GetClientRect(hwnd, &rect); //æŠŠå®¢æˆ·åŒºçš„å¤§å°å†™è¿›Rectç»“æ„ä¸­
 	hdc = GetDC(hwnd);
 
 	hdcmem = CreateCompatibleDC(hdc);
@@ -305,13 +305,13 @@ void AttackPaint(HWND hwnd) {
 	hbmMem2 = CreateCompatibleBitmap(hdc, rect.right - rect.left, rect.bottom - rect.top);
 	SelectObject(test, hbmMem2);
 
-	// ========Êä³ö±³¾°
+	// ========è¾“å‡ºèƒŒæ™¯
 	SelectObject(hdcmem, hbmpBackground);
 	GetObject(hbmpBackground, sizeof(BITMAP), &bmp);
 	StretchBlt(test, rect.left, rect.top, rect.right - rect.left,
 		rect.bottom - rect.top, hdcmem, 0, 0, bmp.bmWidth, bmp.bmHeight, SRCCOPY);
 
-	// =====»­¶¯×÷
+	// =====ç”»åŠ¨ä½œ
 	SetStretchBltMode(hdc, COLORONCOLOR);
 	SetStretchBltMode(hdcmem, COLORONCOLOR);
 
@@ -327,10 +327,10 @@ void AttackPaint(HWND hwnd) {
 	}
 	attack++;
 
-	// ========Êä³öµĞÈË
+	// ========è¾“å‡ºæ•Œäºº
 	PaintArmy(test, hdcmem);
 
-	// »æÖÆ´óÕĞ
+	// ç»˜åˆ¶å¤§æ‹›
 	if (TRUE == bigstart) {
 		if (RIGHT == bigd) {
 			BigR_Paint(test, hdcmem);
@@ -346,10 +346,10 @@ void AttackPaint(HWND hwnd) {
 		Clearbehit();
 	}
 
-	// =======Êä³öÓÎÏ·ĞÅÏ¢
+	// =======è¾“å‡ºæ¸¸æˆä¿¡æ¯
 	PaintInfo(test, hdcmem);
 
-	// Ò»´ÎĞÔ»æÖÆµ½Ä¿±ê´°¿Ú
+	// ä¸€æ¬¡æ€§ç»˜åˆ¶åˆ°ç›®æ ‡çª—å£
 	BitBlt(hdc, 0, 0, rect.right - rect.left, rect.bottom - rect.top, test, 0, 0, SRCCOPY);
 
 	DeleteObject(test);
@@ -359,7 +359,7 @@ void AttackPaint(HWND hwnd) {
 	ReleaseDC(hwnd, hdc);
 }
 
-// Íæ¼ÒÒÆ¶¯
+// ç©å®¶ç§»åŠ¨
 void PlayerMove(Direction d){
 
 	switch (d) {
@@ -386,7 +386,7 @@ void PlayerMove(Direction d){
 	}
 }
 
-// Íæ¼ÒÊÇ·ñËÀÍö
+// ç©å®¶æ˜¯å¦æ­»äº¡
 BOOL IfDead() {
 
 	if (player.HP <= 0)
