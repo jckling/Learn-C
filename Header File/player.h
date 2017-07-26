@@ -2,7 +2,6 @@
 #ifndef _PLAYER_H
 #define _PLAYER_H
 
-#include "Header.h"
 #include "zombie.h"
 #include "pig.h"
 #include "boss1.h"

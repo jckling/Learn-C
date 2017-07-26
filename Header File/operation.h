@@ -4,7 +4,6 @@
 
 #include <math.h>
 #include "player.h"
-#include "LinkList.h"
 
 // π÷ŒÔ“∆∂Ø
 void ArmyMove(AllType *a);
