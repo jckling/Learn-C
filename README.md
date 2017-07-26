@@ -1,6 +1,6 @@
 C+API小游戏实验报告
 ==================
-*写得不够简洁，图片路径请自行更改，此为备份用*<br>
+	写得不够简洁，图片路径请自行更改，此为备份用
 	一开始决定写清版动作类游戏是因为大家差不多都选完了，不想选重复的XD
 	玩了几天的小游戏还有横版网游之后才了解什么叫清版动作游戏（像DNF那样）
 	于是上网扒了扒gif，之后就决定主角就是你了————突击兵
@@ -18,7 +18,7 @@ C+API小游戏实验报告
 	
 <br><br>编程思路
 ----------------------
-	![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/20170726.png)  
+![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/20170726.png)  
 	
 <br><br>编程方案
 ----------------------
