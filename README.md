@@ -4,9 +4,9 @@ C+API小游戏实验报告
 一开始决定写清版动作类游戏是因为大家差不多都选完了，不想选重复的XD。<br>
 玩了几天的小游戏还有横版网游之后才了解什么叫清版动作游戏（像DNF那样），后来发现人物要动作的话需要好多素材，根本找不到一整套… 于是上网扒了扒gif，之后就决定是你了——突击兵。<br>
 决定了人物之后就在找怪物的gif素材，没有方向的找实在是太浪费时间了，而且还得把gif切分一下再加上相同的底色（为了用TransparentBlt这个函数）。图片、logo、鼠标光标、音乐，游戏基本素材整得比较久，毕竟都是自己ps弄的图，还有喜欢的动漫音乐，最后游戏做出来了倒是很欣慰的。<br>
-*运行截图：*<br>
+<br>*运行截图*<br>
 ![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/1.png)
-<br>
+<br><br>
 ![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/2.png)  
 
 
