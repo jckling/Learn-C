@@ -1,0 +1,9 @@
+#pragma once
+
+#include <windows.h>
+#include "resource.h"
+
+void InitBeginUI( HDC, HINSTANCE );
+
+//ªÊ÷∆≤Àµ•
+void ShowGameMenu( HDC );
