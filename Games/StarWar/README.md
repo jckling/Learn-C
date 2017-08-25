@@ -67,9 +67,9 @@
 >《COMPLEX》——寄生兽<br>
 >
 <br><br>*运行截图*<br><br>
-![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/1.png)
+![relation](https://github.com/jckling/Learn-C/blob/master/Games/StarWar/运行截图/1.png)
 <br><br>
-![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/2.png)  
+![relation](https://github.com/jckling/Learn-C/blob/master/Games/StarWar/运行截图/2.png)  
 
 
 ## 游戏设计
@@ -82,7 +82,7 @@
 	
 
 ## 编程思路
-![relation](https://github.com/jckling/C-Game/blob/master/Report%20Images/20170726.png)  
+![relation](https://github.com/jckling/Learn-C/blob/master/Games/StarWar/运行截图/20170726.png)  
 
 
 ## 编程方案
