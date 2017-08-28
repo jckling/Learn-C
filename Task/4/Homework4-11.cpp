@@ -13,14 +13,14 @@ int main()
 		{
 			printf("%c", x);
 			if (x < 'Z')
-				x++£»
+				x++;
 			else
 				x -= 25;
 		}
 		for (m = 1; m <= n; m++)
 			printf("+");
-		i += 2£»
-		printf("\n")£»
+		i += 2;
+		printf("\n");
 	}
 	i = 15;
 	for (n = 2; n <10; n++)
