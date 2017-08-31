@@ -4,13 +4,14 @@
 #define STU 4
 
 int FindMax(int *p, int m, int n, int *pRow, int *pCol);
+
 int main()
 {
 	int score[CLASS][STU], i, j, maxScore, row, col;
 	// printf("Please enter score:\n");
-	for (i = 0; i<CLASS; i++)
+	for (i = 0; i < CLASS; i++)
 	{
-		for (j = 0; j<STU; j++)
+		for (j = 0; j < STU; j++)
 		{
 			scanf("%d", &score[i][j]); /*输入学生成绩*/
 		}

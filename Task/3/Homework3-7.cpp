@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	double x,y,total = 0, sum = 0;	
+	double x, y, total = 0, sum = 0;	
 	scanf("%lf", &x);
     while (x != -1)
 	{
@@ -10,6 +10,7 @@ int main()
 		total += x;
 		scanf("%lf", &x);		
 	}
-    printf("%lf",sum / total);
+    printf("%lf", sum / total);
+
 	return 0;
 }

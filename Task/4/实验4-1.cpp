@@ -19,7 +19,7 @@ int main()
 			break;
 		}
 	}while(counter < 5);
-	printf("You guess %d times\n",counter);
+	printf("You guess %d times\n", counter);
 	printf("The game is over!\n");
 	return 0;
 }

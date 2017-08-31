@@ -2,6 +2,6 @@
 int main()
 {
 	printf("hp100%%");
-	return 0;
 
+	return 0;
 }

@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<string.h>
+
 void addSpace(char *p);
+
 int main()
 {
 	char str[80];
@@ -9,11 +11,12 @@ int main()
 	puts(str);
 	return 0;
 }
+
 void addSpace(char *p)
 {
 	char a[80];
-	int i,j;
-	for (i = 0,j=0; i < strlen(p); i++)
+	int i, j;
+	for (i = 0, j = 0; i < strlen(p); i++)
 	{
 		a[j] = p[i];
 		a[j + 1] = ' ';

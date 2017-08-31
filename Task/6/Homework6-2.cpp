@@ -5,7 +5,7 @@ int main()
 	int a, b;
 	int result;
 	scanf("%d,%d", &a, &b);
-	result = Add(a, a*(b - 1));
+	result = Add(a, a * (b - 1));
 	printf("%d", result);
 	return 0;
 }

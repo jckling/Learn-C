@@ -5,7 +5,7 @@ int main()
 	char a[80], b[80];
 	scanf("%s", a);
 	scanf("%s", b);
-	printf("%d",strcompare(a, b));
+	printf("%d", strcompare(a, b));
 	return 0;
 
 }

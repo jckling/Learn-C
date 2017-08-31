@@ -10,7 +10,7 @@ int main()
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (a[j][0]>a[j+1][0])
+			if (a[j][0] > a[j + 1][0])
 			{
 				strcpy(b, a[j]);
 				strcpy(a[j], a[j + 1]);

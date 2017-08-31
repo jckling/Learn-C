@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 typedef struct Entry
 {
 	char word[15]; //µ¥´Ê
@@ -36,6 +37,7 @@ int main()
 	return 0;
 
 }
+
 int lookup(ENTRY dictionary[], char search[], int entries)
 {
 	int i, flag = -1;

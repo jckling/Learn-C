@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 typedef struct date
 {
 	int month;
@@ -18,6 +19,7 @@ int main()
 	printf("%d %d %d\n", nextDay.month, nextDay.day, nextDay.year);
 	return 0;
 }
+
 DATE dateUpdate(DATE a)
 {
 	int flag;

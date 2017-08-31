@@ -1,11 +1,13 @@
 #include  <stdio.h>
 #define STU 30
 #define COURSE 3
+
 void Input(long num[], int score[][COURSE], int n);
 void GetSumAver(int score[][COURSE], int n, int sum[], float aver[]);
 void Sort(long num[], int score[][COURSE], int n, int sum[], float aver[]);
 void Print(long num[], int score[][COURSE], int n, int sum[], float aver[]);
 int  Search(long num[], int n, long x);
+
 int main()
 {
 	int n, score[STU][COURSE], sum[STU], pos;
@@ -24,6 +26,7 @@ int main()
 	Print(num, score, n, sum, aver);
 	return 0;
 }
+
 void Input(long num[], int score[][COURSE], int n)
 {
 	int i, j;
@@ -34,15 +37,17 @@ void Input(long num[], int score[][COURSE], int n)
 			scanf("%d", &score[i][j]);
 	}
 }
+
 void GetSumAver(int score[][COURSE], int n, int sum[], float aver[])
 {
 	int i, j;
 	for (i = 0; i < n; i++)
 	{
 		sum[i] = score[i][0] + score[i][1] + score[i][2];
-		aver[i] = 1.0*sum[i] / 3;
+		aver[i] = 1.0 * sum[i] / 3;
 	}
 }
+
 void Sort(long num[], int score[][COURSE], int n, int sum[], float aver[])
 {
 	int i, j, k, temp;
@@ -69,12 +74,14 @@ void Sort(long num[], int score[][COURSE], int n, int sum[], float aver[])
 		}
 	}
 }
+
 void Print(long num[], int score[][COURSE], int n, int sum[], float aver[])
 {
 	int i, j;
-	printf("  NO \t   MT \t  EN \t PH \t SUM \t AVER\n");
 
+	printf("  NO \t   MT \t  EN \t PH \t SUM \t AVER\n");
 	printf("----------------------------------------------------\n");
+
 	for (i = 0; i < n; i++)
 	{
 		printf("%ld\t", num[i]); //Êä³öÑ§ºÅ

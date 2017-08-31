@@ -20,7 +20,7 @@ int Prime(int x)
 	n = sqrt(double(x));
 	for (i = 2; i <= n; i++)
 	{
-		if (x%i == 0)
+		if (x % i == 0)
 			return 0;
 	}
 	return 1;
@@ -28,7 +28,7 @@ int Prime(int x)
 void W(int a)
 {
 	int i = 2;
-	while (a%i != 0)
+	while (a % i != 0)
 		i++;
 	printf("%d*%d", i, a / i);
 

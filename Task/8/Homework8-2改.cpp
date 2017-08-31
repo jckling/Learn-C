@@ -6,8 +6,8 @@ int main()
 	for (i = 0; i < 18; i++)
 		scanf("%c", &a[i]);
 	for (i = 0; i < 17; i++)
-		sum += (a[i] - '0')*b[i];
-	switch (sum%11) {
+		sum += (a[i] - '0') * b[i];
+	switch (sum % 11) {
 	case 0:
 		x = '1';
 		break;

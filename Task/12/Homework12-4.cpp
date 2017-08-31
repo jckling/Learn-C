@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include<string.h>
+
 struct student
 {
 	char name[10];
 	int no;
 	float score[2];
 };
+
 void sort(struct student *pst, int n);
 
 int main()
@@ -31,7 +33,7 @@ int main()
 void sort(struct student *pst, int n)
 {
 	int i, j, temp;
-	float temp1,temp2;
+	float temp1, temp2;
 	char fake[10];
 	for (i = 0; i < n - 1; i++)
 	{
@@ -50,13 +52,13 @@ void sort(struct student *pst, int n)
 				pst[j + 1].no = temp;
 				strcpy(fake, pst[j].name);
 				strcpy(pst[j].name, pst[j + 1].name);
-				strcpy(pst[j+1].name, fake);
+				strcpy(pst[j + 1].name, fake);
 			}
 		}
 	}
 
 	printf("\nName\t\tNo\tScore1\tScore2\n");
-	for (i = 0; i <n; i++)
+	for (i = 0; i < n; i++)
 		printf("%s\t\t%d\t%5.1f\t%5.1f\n", pst[i].name, pst[i].no, pst[i].score[0], pst[i].score[1]);
 
 }

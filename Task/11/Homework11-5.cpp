@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+
 int main()
 {
 	char a[3][200];
@@ -14,13 +15,13 @@ int main()
 	{
 		for (j = 0; a[i][j] != '\0'; j++)
 		{
-			if (a[i][j] >='A'&&a[i][j]<='Z')
+			if (a[i][j] >= 'A' && a[i][j] <= 'Z')
 				a[i][j] = a[i][j] - 'A' + 'a';
 		}
 	}//全部转化为小写
 	for (i = 0; x[i] != '\0'; i++)
 	{
-		if (x[i] >= 'A'&&x[i]<='Z')
+		if (x[i] >= 'A' && x[i] <= 'Z')
 			x[i] = x[i] - 'A' + 'a';
 	}//同上
 	for (i = 0; i < 3; i++)

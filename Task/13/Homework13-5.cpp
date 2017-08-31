@@ -34,6 +34,7 @@ int main(void)
 	return 0; /* indicate successful termination */
 
 } /* end main */
+
 void printList(ListNodePtr currentPtr)
 {
 	if (currentPtr == NULL)
@@ -47,6 +48,7 @@ void printList(ListNodePtr currentPtr)
 		}
 	}
 }
+
 void printListBackward(ListNodePtr currentPtr)
 {
 	ListNodePtr p;
@@ -62,6 +64,7 @@ void printListBackward(ListNodePtr currentPtr)
 		printf("%d ", p->data);
 	}
 }
+
 void insertItem(ListNodePtr *sPtr, int value)
 {
 	ListNodePtr newPtr;

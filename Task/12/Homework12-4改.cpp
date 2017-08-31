@@ -1,11 +1,14 @@
 #include <stdio.h>
+
 struct student
 {
 	char name[10];
 	int no;
 	float score[2];
 };
+
 void sort(struct student *pst, int n);
+
 int main()
 {
 	struct student stu[45];

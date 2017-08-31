@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<math.h>
+
 void unpackCharacters(int x);
+
 int main()
 {
 	unsigned x;
@@ -10,6 +12,7 @@ int main()
 
 	return 0;
 }
+
 void unpackCharacters(int x)
 {
 	unsigned displaymask = 1 << 15;

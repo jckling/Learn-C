@@ -3,12 +3,12 @@
 int Prime(int);
 int main()
 {
-	int a,b,c;
+	int a, b, c;
 	do
 	{
 		scanf("%d", &a);
 	} while (a < 6 || a % 2 != 0);
-	for (b = 3; b <= a / 2; b+=2)
+	for (b = 3; b <= a / 2; b += 2)
 	{
 		c = a - b;
 		if (b < c)
@@ -29,7 +29,7 @@ int Prime(int x)
 	n = sqrt(x);
 	for (i = 2; i <= n; i++)
 	{
-		if (x%i == 0)
+		if (x % i == 0)
 		{
 			flag = 0;
 			break;

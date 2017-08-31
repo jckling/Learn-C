@@ -1,10 +1,12 @@
 #include<stdio.h>
+
 int Win(char y[3][3]);
+
 int main()
 {
 	int i, j, count;
 	int a[9] = { 0 };
-	char num[3][3] = { '1','2','3','4','5','6','7','8','9' };
+	char num[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 	count = 0;
 
 	for (i = 0; i < 9; i++)
@@ -36,6 +38,7 @@ int main()
 	}
 	return 0;
 }
+
 int Win(char y[3][3])
 {
 	int flag = 0;

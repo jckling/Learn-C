@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 void FindMaxMin(int num[], int n, int *pMax, int *pMaxPos, int *pMin, int *pMinPos);
+
 int main()
 {
 	int num[10], n, pMax, pMaxPos, pMin, pMinPos;
@@ -7,6 +9,7 @@ int main()
 		scanf("%d", &num[n]);
 	FindMaxMin(num, n, &pMax, &pMaxPos, &pMin, &pMinPos);
 }
+
 void FindMaxMin(int num[], int n, int *pMax, int *pMaxPos, int *pMin, int *pMinPos)
 {
 	int i;
@@ -25,5 +28,5 @@ void FindMaxMin(int num[], int n, int *pMax, int *pMaxPos, int *pMin, int *pMinP
 			*pMinPos = i;
 		}
 	}
-	printf("Max = %d , Position = %d, Min = %d, Position = %d\n",*pMax,*pMaxPos,*pMin,*pMinPos);
+	printf("Max = %d , Position = %d, Min = %d, Position = %d\n", *pMax, *pMaxPos, *pMin, *pMinPos);
 }

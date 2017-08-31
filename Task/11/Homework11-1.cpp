@@ -8,7 +8,10 @@ int main(void)
 	int i; /* loop counter */
 
 	for (i = 0; i < 4; i++)
-	{		scanf("%s", stringValue);			sum += strtod(stringValue, NULL);	}
+	{
+		scanf("%s", stringValue);
+		sum += strtod(stringValue, NULL);
+	}
 
 	printf("The total of the values is %.2f\n", sum);
 

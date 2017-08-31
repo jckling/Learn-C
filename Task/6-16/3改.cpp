@@ -12,7 +12,7 @@ void p(int x)
 	int i, flag = 1;
 	for (i = 2; i <= sqrt(x); i++)
 	{
-		if (x%i == 0)
+		if (x % i == 0)
 		{
 			printf("%d*%d", i, x / i);
 			flag = 0;

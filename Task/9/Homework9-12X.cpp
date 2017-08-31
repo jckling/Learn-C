@@ -1,11 +1,13 @@
 #include<stdio.h>
+
 void Print(char x[3][3]);
 int Win(char y[3][3]);
+
 int main()
 {
 	int i, j, count;
 	int a[9] = { 0 };
-	char num[3][3] = { '1','2','3','4','5','6','7','8','9' };
+	char num[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 	count = 0;
 	Print(num);
 	for (i = 0; i < 9; i++)
@@ -38,6 +40,7 @@ int main()
 	}
 	return 0;
 }
+
 void Print(char x[3][3])
 {
 	int i, k;
@@ -46,14 +49,15 @@ void Print(char x[3][3])
 		for (k = 0; k < 3; k++)
 		{
 			printf(" %c ", x[i][k]);
-			if (k<2)
+			if (k < 2)
 				printf("|");
 		}
 		printf("\n");
-		if (i<2)
+		if (i < 2)
 			printf("---+---+---\n");
 	}
 }
+
 int Win(char y[3][3])
 {
 	int flag = 0;

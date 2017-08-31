@@ -2,10 +2,10 @@
 int main()
 {
 	double sum = 0;
-	int a = 1,b;
+	int a = 1, b;
 	while (a <= 20)
 	{
-		b = 3*a + 3;
+		b = 3 * a + 3;
 		if (a % 2 == 0)
 			sum += -1.0 * a / b;
 		else

@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<string.h>
 #include<math.h>
+
 int convertToInt(char num[30]);
+
 int main()
 {
 	char num[30];
@@ -9,6 +11,7 @@ int main()
 	printf("%d", convertToInt(num));
 	return 0;
 }
+
 int convertToInt(char num[30])
 {
 	int i, j, k;
@@ -18,7 +21,7 @@ int convertToInt(char num[30])
 		for (i = 1; num[i] != '\0'; i++);
 		for (j = i - 1, k = 0; j > 0; j--, k++)
 		{
-			temp = (num[j] - '0')*(pow(10, k));
+			temp = (num[j] - '0') * (pow(10, k));
 			sum += temp;
 		}
 	}
@@ -27,7 +30,7 @@ int convertToInt(char num[30])
 		for (i = 0; num[i] != '\0'; i++);
 		for (j = i - 1, k = 0; j >= 0; j--, k++)
 		{
-			temp = (num[j] - '0')*(pow(10, k));
+			temp = (num[j] - '0') * (pow(10, k));
 			sum += temp;
 		}
 		return sum;

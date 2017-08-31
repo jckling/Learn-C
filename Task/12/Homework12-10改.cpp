@@ -1,6 +1,8 @@
 #include<stdio.h>
+
 void print(int a);
 void pow(unsigned a);
+
 int main()
 {
 	unsigned a;
@@ -8,6 +10,7 @@ int main()
 	print(a);
 	pow(a);
 }
+
 void pow(unsigned a)
 {
 	unsigned mask1, mask2;
@@ -21,6 +24,7 @@ void pow(unsigned a)
 	printf("\n");
 	print(y);
 }
+
 void print(int a)
 {
 	unsigned mask = 1 << 15;

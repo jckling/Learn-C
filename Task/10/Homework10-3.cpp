@@ -13,7 +13,7 @@ int main()
 	scanf("%d", &n); /*从键盘输入学生人数n*/
 
 					 // printf("Please enter the number and score:\n");
-	for (i = 0; i<n; i++) /*分别以长整型和整型格式输入学生的学号和成绩*/
+	for (i = 0; i < n; i++) /*分别以长整型和整型格式输入学生的学号和成绩*/
 	{
 		scanf("%ld%d", &num[i], &score[i]);
 	}
@@ -24,6 +24,7 @@ int main()
 
 	return 0;
 }
+
 int FindMax(int score[], long num[], int n, long *pMaxNum)
 {
 	int i, j;

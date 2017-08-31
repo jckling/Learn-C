@@ -1,11 +1,14 @@
 #include<stdio.h>
+
 struct time sub(struct time t1, struct time t2);
+
 struct time
 {
 	int s;
 	int m;
 	int h;
 };
+
 int main()
 {
 	struct time t1, t2;
@@ -13,8 +16,9 @@ int main()
 	scanf("%d %d %d", &t1.h, &t1.m, &t1.s);
 	scanf("%d %d %d", &t2.h, &t2.m, &t2.s);
 	result = sub(t1, t2);
-	printf("Time between %.2d:%.2d:%.2d and %.2d:%.2d:%.2d is %.2d:%.2d:%.2d\n", t1.h,t1.m,t1.s,t2.h,t2.m,t2.s,result.h,result.m,result.s);
+	printf("Time between %.2d:%.2d:%.2d and %.2d:%.2d:%.2d is %.2d:%.2d:%.2d\n", t1.h, t1.m, t1.s, t2.h, t2.m, t2.s, result.h, result.m, result.s);
 }
+
 struct time sub(struct time t1, struct time t2)
 {
 	struct time time;

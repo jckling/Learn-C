@@ -5,7 +5,7 @@
 int main()
 {
 	char a[2][100], b[100], c[100];
-	int i, j, n,m, flag;
+	int i, j, n, m, flag;
 	flag = n = m = j = 0;
 	gets_s(a[0]);
 	gets_s(a[1]);

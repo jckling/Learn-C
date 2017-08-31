@@ -1,7 +1,7 @@
 #include<stdio.h>//4039.44
 int main()
 {
-	double a,b;
+	double a, b;
 	int i;
 	a = 1000.0;
 	b = a / (1 + 12 * 0.0063);

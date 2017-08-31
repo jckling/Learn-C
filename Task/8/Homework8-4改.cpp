@@ -22,7 +22,7 @@ int main()
 	printf("Fail students %d\n\n", fail);
 
 	//在此添加语句调用 GetAboveAver函数             
-	aboveAver = GetAboveAver(num,score,n);
+	aboveAver = GetAboveAver(num, score, n);
 	printf("Above aver students %d\n\n", aboveAver);
 	//在此添加语句调用  GetDetail函数     
 	GetDetail(score, n);
@@ -37,11 +37,11 @@ int ReadScore(long num[], float score[])
 		scanf("%f", &score[i]);
 		i++;
 	} while (score[i - 1] > 0);
-	return i-1;
+	return i - 1;
 }
 int GetFail(long num[], float score[], int n)
 {
-	int i, count=0;
+	int i, count = 0;
 	printf("Fail:\nnumber -- score\n");
 	for (i = 0; i < n; i++)
 	{
@@ -55,11 +55,11 @@ int GetFail(long num[], float score[], int n)
 }
 float GetAver(float score[], int n)
 {
-	int i, sum=0;
+	int i, sum = 0;
 	float avg;
 	for (i = 0; i < n; i++)
 		sum += score[i];
-	avg = sum*1.0 / n;
+	avg = sum * 1.0 / n;
 	return avg;
 
 }
@@ -99,11 +99,9 @@ void GetDetail(float score[], int n)
 		else if (score[i] == 100)
 			a[5]++;		
 	}
-	printf("<60%8d%12.2f\n", a[0],100*a[0]*1.0/n); //成绩在60分以下
-	for(i=1;i<5;i++)
-	printf("%d--%d%5d%12.2f\n", (i+5)*10,(i+6)*10, a[i], 100*a[i]*1.0/n); //成绩在某个区间内，如60-70之间
+	printf("<60%8d%12.2f\n", a[0], 100 * a[0] * 1.0 / n); //成绩在60分以下
+	for(i = 1; i < 5; i++)
+		printf("%d--%d%5d%12.2f\n", (i + 5) * 10, (i + 6) * 10, a[i], 100 * a[i] * 1.0 / n); //成绩在某个区间内，如60-70之间
 
-	printf("%d%8d%12.2f\n", 100, a[5],100*a[5]*1.0/n);//成绩为100
-
-
+	printf("%d%8d%12.2f\n", 100, a[5], 100 * a[5] * 1.0 / n);//成绩为100
 }

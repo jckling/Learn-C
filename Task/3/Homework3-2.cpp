@@ -57,8 +57,7 @@ int main()
 		}
 	}
 
-	printf("small to big: %d %d %d",a,b,c);
+	printf("small to big: %d %d %d", a, b, c);
+
 	return 0;
-
-
 }

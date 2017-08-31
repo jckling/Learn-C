@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+
 void p(int i);
 int s(int j);
+
 int main()
 {
 	int i;
@@ -12,10 +14,11 @@ int main()
 	else
 		p(i);
 }
+
 void p(int i)
 {
 	int *p, n, j;
-	p = (int *)malloc(sizeof(int)*i);
+	p = (int *)malloc(sizeof(int) * i);
 	for (j = 2, n = 0; n < i; j++)
 	{
 		if (s(j))
@@ -31,6 +34,7 @@ void p(int i)
 			printf("\n");
 	}
 }
+
 int s(int j)
 {
 	int i;
@@ -38,7 +42,7 @@ int s(int j)
 		return 1;
 	for (i = 2; i <= sqrt(j); i++)
 	{
-		if (j%i == 0)
+		if (j % i == 0)
 			return 0;
 	}
 	return 1;

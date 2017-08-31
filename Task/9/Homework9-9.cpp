@@ -12,7 +12,7 @@ int main()
 int strcompare(char *p1, char *p2)
 {
 	int k, i;
-	k=strcmp(p1, p2);
+	k = strcmp(p1, p2);
 	if (k == 0)
 		return k;
 	else if (k > 0)

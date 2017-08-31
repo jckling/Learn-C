@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 typedef struct horse
 {
 	int age;
@@ -9,6 +10,7 @@ typedef struct horse
 	char mother[20];
 	struct horse *next;
 }Horse;
+
 int main()
 {
 	Horse *head, *p1, *p2, *p;

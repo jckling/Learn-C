@@ -19,16 +19,16 @@ int main()
 		}
 	}	
 	printf("\n");
-	printf("count=%d",count);
+	printf("count=%d", count);
 	return 0;
 }
 int Turn(int x)
 {
 	int y;
 	if (x < 100)
-		y = (x % 10)*10 + (x/10);
+		y = (x % 10) * 10 + (x / 10);
 	else
-	    y = ((x % 10) * 100) + ((x%100)/10) * 10 + (x/100);
+	    y = ((x % 10) * 100) + ((x % 100)/10) * 10 + (x / 100);
 	return y;
 }
 
@@ -41,7 +41,7 @@ int P(int x)
 	n = sqrt(x);
 	for (i = 2; i <= n; i++)
 	{
-		if (x%i == 0)
+		if (x % i == 0)
 		{
 			flag = 0;
 			break;

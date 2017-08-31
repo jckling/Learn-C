@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<ctype.h>
-#include<string.h>
+#include<string.h>z
 int main()
 {
 	char c[10];
@@ -21,7 +21,7 @@ int main()
 			if (strcmp(vote[j].name,c) == 0)
 				vote[j].sum++;
 		}
-	}
+	
 	for (i = 0; i < 3; i++)
 		printf("%s:%d\n", vote[i].name, vote[i].sum);
 	return 0;

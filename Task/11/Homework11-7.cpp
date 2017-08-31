@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
 int main()
 {
 	char a[2][50];
@@ -9,14 +10,14 @@ int main()
 	int i, j;
 	char *p;
 
-	for(i=0;i<2;i++)
-	gets(a[i]);
+	for (i = 0; i < 2; i++)
+		gets(a[i]);
 
 	for (i = 0; i < 2; i++)
 	{
 		for (j = 0; a[i][j] != '\0'; j++)
 		{
-			if (a[i][j] >= 'A'&&a[i][j] <= 'Z')
+			if (a[i][j] >= 'A' && a[i][j] <= 'Z')
 				a[i][j] = a[i][j] - 'A' + 'a';
 		}
 	}//全转化为小写

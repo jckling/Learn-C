@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int size[12] = { 52,53,54,55,56,57,58,59,60,61,62,63 }, bank[12] = { 164,166,169,172,175,178,181,184,188,191,194,197 };
+	int size[12] = {52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63}, bank[12] = {164, 166, 169, 172, 175, 178, 181, 184, 188, 191, 194, 197};
 	int real;
 	int i, flag;
 	double wide;
@@ -22,21 +22,21 @@ int main()
 			real = 164;
 		for (i = 0; i < 12; i++)
 		{
-			if (real<(bank[i + 1] - 1) && real>bank[i]&&real<bank[i+1])
+			if (real < (bank[i + 1] - 1) && real > bank[i] && real < bank[i + 1])
 			{
 				real = bank[i];
 				break;
 			}
-			else if (real<bank[i+1]&&real > bank[i] && real >= (bank[i + 1] - 1))
+			else if (real < bank[i + 1] && real > bank[i] && real >= (bank[i + 1] - 1))
 			{
 				real = bank[i + 1];
 				break;
 			}
 		}
 	}
-	if(real>197)
+	if(real > 197)
 		printf("You, in technical parlance, are a fathead. No hat for you, I'm afraid.\n");
-	else if(real<163)
+	else if(real < 163)
 		printf("You are the proverbial pinhead. No hat for you I'm afraid.\n");
 	else
 	{

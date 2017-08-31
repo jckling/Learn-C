@@ -15,7 +15,7 @@ int main()
 void p(double a, double b)
 {
 	double result;
-	double c,j,n,k;
+	double c, j, n, k;
 	j = n = k = 1;
 	c = a - b;
 	for (; a > 0; a--)

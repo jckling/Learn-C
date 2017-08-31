@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+
 int main()
 {
 	char a[100], *q[20], *p;
@@ -22,7 +23,7 @@ int main()
 	for (j = 1; j < i ; j++)
 	{
 		printf(" ");
-		for(k=1; *(q[j] + k)!='\0';k++)
+		for(k = 1; *(q[j] + k)!='\0';k++)
 		printf("%c", *(q[j] + k));
 		printf("%cay", *q[j]);
 	}

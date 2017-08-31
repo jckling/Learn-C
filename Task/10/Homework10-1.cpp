@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<string.h>
+
 void printstring(char *p, int n, int m);
+
 int main()
 {
 	int a, b;
@@ -13,6 +15,7 @@ int main()
 	printstring(str, a, b);
 	return 0;
 }
+
 void printstring(char *p, int n, int m)
 {
 	int i;

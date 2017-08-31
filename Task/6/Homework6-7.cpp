@@ -14,10 +14,17 @@ int main()
 	while ((c = getchar()) != STOP)
 	{
 		// 补充程序，统计字符数、行数、单词数
-		if (c!=' '&&c!='\n'&&c!='\t')
-			n_chars++;		if (c == '\n')
+		if (c != ' ' && c != '\n' && c != '\t')
+			n_chars++;
+		if (c == '\n')
 			n_lines++;
-		if (c == ' '||c=='\n')			inword = 0;		if (inword == 0&&c!='\n')		{			inword = 1;			n_words++;		}
+		if (c == ' '||c=='\n')
+			inword = 0;
+		if (inword == 0 && c != '\n')
+		{
+			inword = 1;
+			n_words++;
+		}
 		prev = c;
 	}
 	if (prev != '\n')

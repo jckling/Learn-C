@@ -27,7 +27,7 @@ double charge(double x)
 		if (x > int(x))
 			x = 2 + int(x - 2) * 0.5;
 		else
-			x = 2 + int(x - 3)*0.5;
+			x = 2 + int(x - 3) * 0.5;
 	}
 	else
 		x = 10;

@@ -1,7 +1,10 @@
 #include<stdio.h>
 #include<string.h>
-void deletechar(char *p, char c);
+
 #define SIZE 20
+
+void deletechar(char *p, char c);
+
 int main()
 {
 	char str[SIZE];
@@ -16,6 +19,7 @@ int main()
 	puts(str);
 	return 0;
 }
+
 void deletechar(char *p, char c)
 {
 	char *a = p, *b = p;

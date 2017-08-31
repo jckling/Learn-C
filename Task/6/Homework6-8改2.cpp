@@ -18,7 +18,7 @@ int p(int a, int b)
 	{
 		for (i = a; i > 0; i--)
 		{
-			if (a%i == 0 && b%i == 0)
+			if (a % i == 0 && b % i == 0)
 				return i;
 		}
 	}

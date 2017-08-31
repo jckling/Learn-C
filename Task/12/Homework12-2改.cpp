@@ -1,12 +1,15 @@
 #include<stdio.h>
-void m(struct student *student,int n);
+
+void m(struct student *student, int n);
 void b(struct student *student, int n);
+
 struct student
 {
 	char name[20];
 	int num;
 	double score[2];
 };
+
 int main()
 {
 	struct student stu[45];
@@ -23,7 +26,7 @@ int main()
 		scanf("%lf", &stu[i].score[1]);
 		getchar();
 	}
-	m(stu,n);
+	m(stu, n);
 	b(stu, n);
 	return 0;
 }
@@ -62,7 +65,7 @@ void b(struct student *student, int n)
 	printf("Below average:\n");
 	for (i = 0; i < n; i++)
 	{
-		if (student[i].score[0] < sum1&&student[i].score[1] < sum2)
+		if (student[i].score[0] < sum1 && student[i].score[1] < sum2)
 		{
 			printf("%s\t\t%ld\n", student[i].name, student[i].num);
 			flag = 0;

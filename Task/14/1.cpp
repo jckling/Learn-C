@@ -1,13 +1,14 @@
 #include<stdio.h>
+
 int main()
 {
 	int x, y, flag;
-	int a[7] = { 3,10,20,25,30,35,45 }, b[7] = { 0,105,555,1005,2775,5505,13505 };
+	int a[7] = {3, 10, 20, 25, 30, 35, 45}, b[7] = {0, 105, 555, 1005, 2775, 5505, 13505};
 	double sum, del, num;
 	do
 	{
 		scanf("%d %d", &x, &y);
-	} while (x < 0 | y < 0);
+	} while (x < 0 || y < 0);
 	num = x - y - 3500;
 	if (num <= 0)
 		printf("您无须缴纳个人所得税\n");
@@ -27,7 +28,7 @@ int main()
 			flag = 5;
 		else
 			flag = 6;
-		del = num*a[flag] / 100 - b[flag];
+		del = num * a[flag] / 100 - b[flag];
 		sum = x - y - del;
 		printf("应纳税所得额:%.2f\n适用税率:%d%%\n速算扣除数:%d\n应缴税款:%.2f\n实发工资:%.2f\n", num, a[flag], b[flag], del, sum);
 	}

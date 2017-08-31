@@ -4,7 +4,7 @@ int Prime(int);
 int Turn(int);
 int main()
 {
-	int i, j, counter=0;
+	int i, j, counter = 0;
 	for (i = 100; i < 1000; i++)
 	{
 		j = Turn(i);
@@ -30,7 +30,7 @@ int Prime(int x)
 		n = sqrt(x);
 		for (i = 2; i <= n; i++)
 		{
-			if (x%i == 0)
+			if (x % i == 0)
 			{
 				flag = 0;
 				break;

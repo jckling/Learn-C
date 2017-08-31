@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+
 int main()
 {
 	char a[10][100] = { 0 }, b[1000] = { 0 };
@@ -16,7 +17,7 @@ int main()
 		{
 			gets_s(a[i]);
 			i++;
-		} while (a[i - 1][0] != '\0'&&a[i][0] == '\0');
+		} while (a[i - 1][0] != '\0' && a[i][0] == '\0');
 	}
 	for (j = 0; j < i; j++)
 	{
@@ -25,7 +26,7 @@ int main()
 			b[l] = a[j][k];
 			l++;
 		}
-		if (a[j][k] == '\0'&&a[j][k - 1]>='a'&&a[j][k - 1]<='z')
+		if (a[j][k] == '\0' && a[j][k - 1]>='a' && a[j][k - 1]<='z')
 		{
 			b[l] =' ';
 			l++;

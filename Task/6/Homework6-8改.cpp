@@ -6,7 +6,7 @@ int main()
 	int i = 1, k;
 	scanf("%d %d", &a, &b);
 	k = CommonFactors(a, b);
-	while (k!=-1)
+	while (k != -1)
 	{
 		printf("Common factor %d is %d\n", i, k);
 		k = CommonFactors(a, b);
@@ -21,12 +21,12 @@ int CommonFactors(int a, int b)
 		if (a % b == 0)
 			return i = b;
 		else
-			return CommonFactors(b, a%b);
+			return CommonFactors(b, a % b);
 	}
 	else
 	{
 		if (i % 2 == 0)
-			return i=i / 2;
+			return i = i / 2;
 		else
 			return -1;
 	}

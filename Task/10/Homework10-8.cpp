@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+
 int Prime(int x);
 void Pri(int x);
+
 int main()
 {
 	int a;
@@ -14,6 +16,7 @@ int main()
 
 	return 0;
 }
+
 int Prime(int x)
 {
 	int i;
@@ -23,7 +26,7 @@ int Prime(int x)
 	n = sqrt(x);
 	for (i = 2; i <= n; i++)
 	{
-		if (x%i == 0)
+		if (x % i == 0)
 		{
 			flag = 0;
 			break;
@@ -31,6 +34,7 @@ int Prime(int x)
 	}
 	return flag;
 }
+
 void Pri(int x)
 {
 	int i, j;

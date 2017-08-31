@@ -1,5 +1,5 @@
 #include<stdio.h>
-void multiple(int,int);
+void multiple(int, int);
 int main()
 {
 	int a, b, i;
@@ -11,10 +11,10 @@ int main()
 return 0;
 }
 
-void multiple(int x,int y)
+void multiple(int x, int y)
 {
-	if(y%x==0)
-		printf("%d is a multiple of %d\n",y,x);
+	if(y % x == 0)
+		printf("%d is a multiple of %d\n", y, x);
 	else
-	    printf("%d is not a multiple of %d\n",y,x);
+	    printf("%d is not a multiple of %d\n", y, x);
 }

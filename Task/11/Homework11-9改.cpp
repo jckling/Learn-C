@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+
 int main()
 {
 	char a[8][1000], b[4096], *p;

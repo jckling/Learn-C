@@ -40,7 +40,7 @@ void yesterday(int a, int b, int c)
 			break;
 		case 3:
 			b -= 1;
-			c = 28+flag;
+			c = 28 + flag;
 			break;
 				
 		}

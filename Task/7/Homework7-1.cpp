@@ -1,21 +1,20 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-	int i, counter=0;
-	int sum=0;
-	double avg;
 	int number[10];
-	for (i = 0; i < 10; i++)
+	int min, x;
+	int i;
+	scanf("%d", &number[0]);
+	min = number[0];
+	for (i = 1; i < 10; i++)
 	{
 		scanf("%d", &number[i]);
-		sum += number[i];
+		x = fabs(number[i]);
+		if (fabs(min) > x)
+			min = number[i];
 	}
-	avg = sum / 10;
-	for (i = 0; i < 10; i++)
-	{
-		if (number[i] > avg)
-			counter++;
-	}
-	printf("%d", counter);
+	printf("%d", min);
+
 	return 0;
 }

@@ -26,7 +26,7 @@ int MaxCommonFactor(int x, int y)
 
 	do
 	{
-		r = max%min;
+		r = max % min;
 		{
 			if (r > min)
 			{

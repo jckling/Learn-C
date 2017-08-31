@@ -1,12 +1,15 @@
 #include <stdio.h>
+
 struct student
 {
 	char name[10];
 	int no;
 	float score[2];
 };
+
 void maxscore(struct student *pst, int n);
 void average(struct student *pst, int n);
+
 int main()
 {
 	struct student student[45];
@@ -30,7 +33,7 @@ int main()
 
 void maxscore(struct student *pst, int n)
 {
-	int i, max, flag=0;
+	int i, max, flag = 0;
 	max = 0;
 	for (i = 1; i < n; i++)
 	{
@@ -85,7 +88,7 @@ void average(struct student *pst, int n)
 	{
 		for (i = 0; i < n; i++)
 		{
-			if ((pst[i].score[0] < avg1)&&(pst[i].score[1] < avg2))
+			if ((pst[i].score[0] < avg1) && (pst[i].score[1] < avg2))
 				printf("%s\t\t%ld\n", pst[i].name, pst[i].no);
 		}
 	}

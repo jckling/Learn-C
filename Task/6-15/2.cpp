@@ -19,6 +19,4 @@ void T(int a)
 		k++;
 		i += k;
 	}
-
-
 }

@@ -46,7 +46,7 @@ unsigned reverseBits(unsigned value)
 	printf("\n");
 	for (c = 1; c <= 16; c++)
 	{
-		real += ((fake&displaymask ? '1' : '0') - '0')*n;
+		real += ((fake&displaymask ? '1' : '0') - '0') * n;
 		fake <<= 1;
 		n /= 2;
 	}

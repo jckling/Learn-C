@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+
 void printLatinWord(char *word); 
+
 int main(void)
 {
 	char s[80], *p;     
@@ -16,6 +18,7 @@ int main(void)
 	printf(".\n");
 	return 0;
 }
+
 void printLatinWord(char *word)
 {
 	unsigned int i;

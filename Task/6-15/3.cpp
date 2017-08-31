@@ -16,7 +16,7 @@ int X(int x)
 		return 1;
 	else
 	{
-		for (i = 0; i < (x-3); i++)
+		for (i = 0; i < (x - 3); i++)
 		{
 			d = a + b + c;
 			a = b;
@@ -25,7 +25,4 @@ int X(int x)
 		}
 		return d;
 	}
-
-
-
 }

@@ -6,7 +6,7 @@ int main()
 {
 	char delimiters[] = " \n\".,;:!?)(";  //散文的分隔符
 	char buf[100];  //输入缓冲数组，每次将一行文本输入此变量中
-	char *p = NULL, *q=NULL, *temp;
+	char *p = NULL, *q = NULL, *temp;
 	int i = 0, j, k, flag, *c = NULL;
 	while (1)
 	{
@@ -15,7 +15,7 @@ int main()
 		if (buf[0] == '\0')
 			break;
 		i += strlen(buf);
-		p = (char *)realloc(p, i* sizeof(char));
+		p = (char *)realloc(p, i * sizeof(char));
 		for (j = 0; buf[j] != '\0'; j++)
 			p[i - strlen(buf) + j] = buf[j];
 		p[i - strlen(buf) + j] = '\0';
@@ -54,7 +54,7 @@ int main()
 		}
 	}
 	c[j] = 0;
-	for (i = 0;c[i]!=0; i++)
+	for (i = 0; c[i] != 0; i++)
 	{
 		printf(" %-13s %3d", q[i], c[i]);
 		if ((i + 1) % 5 == 0)

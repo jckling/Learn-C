@@ -6,7 +6,7 @@ int main()
 	double x, y, z;
 	int flag = 1;
 
-	scanf("%lf,%lf,%lf",&a,&b,&c);
+	scanf("%lf,%lf,%lf", &a, &b, &c);
 
 	if ((a - b) < c && (a + b) > c)
 	{

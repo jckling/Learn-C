@@ -1,6 +1,8 @@
 #include<stdio.h>
+
 void print(int a);
 unsigned pow(char a, char b);
+
 int main()
 {
 	char a, b;
@@ -12,12 +14,14 @@ int main()
 	printf("\n\'%c\' and \'%c\' packed in an unsigned integer:\n", a, b);
 	print(pow(a, b));
 }
+
 unsigned pow(char a, char b)
 {
 	unsigned i = a;
 	i <<= 8;
 	return i|b;
 }
+
 void print(int a)
 {
 	unsigned mask = 1 << 15;

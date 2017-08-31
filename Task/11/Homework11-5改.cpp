@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<ctype.h>
 #include<string.h>
+
 int main()
 {
 	char a[3][80], b[80], *p;

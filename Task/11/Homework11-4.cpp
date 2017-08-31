@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<string.h>
+
 void ING(char x[]);
+
 int main()
 {
 	char a[5][20];

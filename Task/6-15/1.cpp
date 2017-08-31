@@ -19,6 +19,4 @@ void X(int a, char b, char c)
 			printf("%c", b);
 		printf("\n");
 	}
-
-
 }

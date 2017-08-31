@@ -1,11 +1,13 @@
 #include<stdio.h>
 #include<math.h>
+
 int P(int a, int b, int c, int d);
+
 int main()
 {
 	int a, b, c, d;
-	scanf("%d%d%d%d", &a, &b, &c, &d);
 
+	scanf("%d%d%d%d", &a, &b, &c, &d);
 
 	if (P(a, b, c, d))
 		printf("y");
@@ -13,6 +15,7 @@ int main()
 		printf("n");
 	return 0;
 }
+
 int P(int a, int b, int c, int d)
 {
 	int flag = 0;

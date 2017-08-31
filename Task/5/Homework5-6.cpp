@@ -25,7 +25,7 @@ void MaxCommonFactor(int x, int y)
 
 	do
 	{
-		r = max%min;
+		r = max % min;
 		{
 			if (r > min)
 			{
@@ -35,7 +35,7 @@ void MaxCommonFactor(int x, int y)
 			else
 			{
 				max = min;
-				if(r!=0)
+				if(r != 0)
 				min = r;
 			}
 		}

@@ -4,7 +4,7 @@ int main()
 	int a, b, c;
 	int day;
 
-	scanf("%d,%d,%d", &a,&b,&c);
+	scanf("%d,%d,%d", &a, &b, &c);
 
 	if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0))
 		day = 1;

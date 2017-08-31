@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main()
 {
-	int fahr,celsius;
-	int upper,lower,step;
+	int fahr, celsius;
+	int upper, lower, step;
 
-    scanf("%d",&lower);
-    scanf("%d",&upper);
+    scanf("%d", &lower);
+    scanf("%d", &upper);
 
-	step=20;
-    fahr=lower;
+	step = 20;
+    fahr = lower;
 
-	while(fahr<=upper)
+	while(fahr <= upper)
 	{
-		celsius=5*(fahr-32)/9;
-		printf("%d\t%d\n",fahr,celsius);
-		fahr=fahr+step;
+		celsius = 5 * (fahr - 32) / 9;
+		printf("%d\t%d\n", fahr, celsius);
+		fahr = fahr + step;
 	}
 	return 0;
 }

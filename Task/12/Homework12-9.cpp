@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 void packCharacters(char a, char b);
+
 int main()
 {
 	char a, b;
@@ -8,6 +10,7 @@ int main()
 	packCharacters(a, b);
 	return 0;
 }
+
 void packCharacters(char a, char b)
 {
 	unsigned displaymask = 1 << 15;
@@ -20,8 +23,8 @@ void packCharacters(char a, char b)
 	contract <<= 8;
 	printf("\n\'%c\' in bits as an unsigned integers is:\n",a);
 	printf("%10u = ", a);
-	for(c=0;c<8;c++)
-	putchar('0');
+	for (c = 0; c < 8; c++)
+		putchar('0');
 	putchar(' ');
 	for (c = 1; c <= 8; c++)
 	{
@@ -30,7 +33,7 @@ void packCharacters(char a, char b)
 	}
 	printf("\n\'%c\' in bits as an unsigned integers is:\n", b);
 	printf("%10u = ", b);
-	for (c = 0; c<8; c++)
+	for (c = 0; c < 8; c++)
 		putchar('0');
 	putchar(' ');
 	for (c = 1; c <= 8; c++)

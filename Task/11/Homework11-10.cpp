@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<ctype.h>
+
 int main()
 {
 	char delimiters[] = " \n\".,;:!?)(";  //É¢ÎÄµÄ·Ö¸ô·û
@@ -46,7 +47,7 @@ int main()
 	{
 		for (k = 0; k < i + 1; k++)
 		{
-			if (p[k] >= 'A'&&p[k] <= 'Z')
+			if (p[k] >= 'A' && p[k] <= 'Z')
 				p[k] = p[k] - 'A' + 'a';
 		}
 		pStr[0] = strtok(p, delimiters);

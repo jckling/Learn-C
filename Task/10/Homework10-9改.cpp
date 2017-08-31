@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 int main()
 {
 	double *p, sum = 0;
@@ -18,7 +19,7 @@ int main()
 		{
 			i = q;
 			q += in;
-			p = (double *)realloc(p, sizeof(double)*q);
+			p = (double *)realloc(p, sizeof(double) * q);
 			for (; i < q; i++)
 				scanf("%lf", &p[i]);
 		}
@@ -31,7 +32,7 @@ int main()
 		printf("%10.1lf", p[i]);
 		if ((i + 1) % 6 == 0)
 		{
-			printf("%10.1lf", sum/6);
+			printf("%10.1lf", sum / 6);
 			printf("\n");
 			sum = 0;
 		}

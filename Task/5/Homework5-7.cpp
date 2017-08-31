@@ -17,7 +17,7 @@ double Fac(unsigned int x)
 	if (x == 1)
 		return 1;
 	else
-		return Fac(x - 1)*x;
+		return Fac(x - 1) * x;
 }
 int Mypow(int x, int y)
 {

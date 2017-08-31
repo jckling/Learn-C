@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<math.h>
+
 void sub(struct shijian *pst);
+
 struct shijian
 {
 	int h;
 	int m;
 	int s;
 };
+
 int main()
 {
 	struct shijian b[2];
@@ -16,6 +19,7 @@ int main()
 	sub(b);
 	return 0;
 }
+
 void sub(struct shijian *pst)
 {
 	struct shijian time;
@@ -37,7 +41,7 @@ void sub(struct shijian *pst)
 	}
 	else
 		time.m = pst[1].m - pst[0].m;
-	if (pst[1].h < 12 && pst[0].h<12)
+	if (pst[1].h < 12 && pst[0].h < 12)
 	{
 		if (pst[1].h - pst[0].h < 0)
 			time.h = 12 + pst[0].h - pst[1].h;

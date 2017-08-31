@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	double w,h,t;
+	double w, h, t;
 	scanf("%lf%lf", &w, &h);
 
 	t = w / h / h;

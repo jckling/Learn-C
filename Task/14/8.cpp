@@ -1,22 +1,25 @@
 #include<stdlib.h>
 #include<stdio.h>
+
 void P(int x, int y);
 void find(int **a, int y);
+
 int main()
 {
 	int x, y;
 	scanf("%d %d", &x, &y);
 	P(x, y);
 }
+
 void P(int x, int y)
 {
 	int i, j, k;
 	int **a;
 	int **p;
-	p = (int **)malloc(sizeof(int*)*x);
-	a = (int **)malloc(sizeof(int*)*y);
+	p = (int **)malloc(sizeof(int*) * x);
+	a = (int **)malloc(sizeof(int*) * y);
 	for (i = 0; i < x; i++)
-		*(p + i) = (int*)malloc(sizeof(int)*y);
+		*(p + i) = (int*)malloc(sizeof(int) * y);
 	for (i = 0; i < y; i++)
 		*(a + i) = (int*)malloc(sizeof(int) * 10);
 	for (i = 0; i < y; i++)
@@ -45,6 +48,7 @@ void P(int x, int y)
 	find(a, y);
 	free(p);
 }
+
 void find(int **a, int y)
 {
 	int i, j, k, flag;

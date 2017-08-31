@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-void hypotenuse(double,double);
+void hypotenuse(double, double);
 int main()
 {
 	double a, b;
@@ -16,7 +16,7 @@ int main()
 void hypotenuse(double x, double y)
 {
 	double n;
-	n = sqrt(x*x + y*y);
-	printf("Hypotenuse:%.1lf\n",n);
+	n = sqrt(x * x + y * y);
+	printf("Hypotenuse:%.1lf\n", n);
 }
 

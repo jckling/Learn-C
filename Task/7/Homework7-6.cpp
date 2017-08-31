@@ -1,23 +1,36 @@
 #include<stdio.h>
 int main()
 {
-	int a[20];
-	int i, k;
+	int a[10];
+	int i, j, k, t, counter;
 	int flag;
-
-	for(i=0;i<20;i++)
+	counter = 0;
+	for (i = 0; i < 10; i++)
 		scanf("%d", &a[i]);
-
-	for (i = 0; i < 20; i++)
+	for (j = 0; j < 9; j++)
 	{
-		flag = 1;
-		for (k = i-1; k >= 0; k--)
+		flag = 0;
+		for (i = 0; i < 9 - j - 1; i++)
 		{
-			if (a[k] == a[i])
-				flag = 0;
+			if (a[i] > a[i + 1])
+			{
+				k = a[i];
+				a[i] = a[i + 1];
+				a[i + 1] = k;
+				flag = 1;
+			}
+			counter++;
 		}
-		if(flag)
-		printf("%d ", a[i]);
+		printf("After pass %d :", j);
+		for (t = 0; t < 10 - j; t++)
+			printf("%4d", a[t]);
+		printf("\n");
+		if (flag == 0)
+			break;
 	}
-	return 0;
-}
+		printf("Data items in ascending order\n");
+		for (i = 0; i < 10; i++)
+			printf("%4d", a[i]);
+		printf("\nNumber of comparisons = %d\n", counter);
+		return 0;
+	}

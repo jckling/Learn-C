@@ -1,5 +1,7 @@
 #include<stdio.h>
+
 void power2(int number, int pow);
+
 int main()
 {
 	int a, b;
@@ -7,6 +9,7 @@ int main()
 	power2(a, b);
 	return 0;
 }
+
 void power2(int number, int pow)
 {
 	unsigned displaymask = 1 << 15;

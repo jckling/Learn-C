@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int a,max;
+	int a, max;
     scanf("%d", &a);
 	max = a;
 	do{
